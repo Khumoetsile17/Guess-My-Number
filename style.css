@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  /*Everything*/
+  margin: 0; /*No space btwn vert*/
+  /*padding: 0;
+  /*box-sizing: inherit;*/
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  /* background-color: #60b347; */
+}
+
+header {
+  position: relative;
+  border-bottom: 5px solid #eee; /*solid middle line at h=45vh*/
+  height: 45vh; /* from the top... position: relative;*/
+}
+
+main {
+  height: 65vh;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  position: absolute; /* it doesn't affect the position of other elements and other elements don't affect its position.*/
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.numbers {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem; /*bigger no-->close to lft*/
+}
+
+.btn-again {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-family: inherit;
+}
+
+.questionMark {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.left {
+  width: 52rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  width: 52rem;
+  font-size: 2rem;
+}
+
+.guess {
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 20rem;
+  text-align: center;
+  display: block; /*no*/
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
