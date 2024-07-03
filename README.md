@@ -1,9 +1,11 @@
 # Guess-My-Number
 
 Overview
+
 "Guess My Number" is a simple number guessing game implemented in JavaScript, HTML, and CSS. The objective of the game is to guess a secret number between 1 and 20. The game provides feedback on whether the guess is too high, too low, or correct. Players can also track their score and highscore.
 
 Features
+
 Randomly generated secret number between 1 and 20.
 User feedback on guesses (too high, too low, correct).
 Score tracking.
@@ -25,6 +27,7 @@ How to Play
 6. Click the "Again!" button to reset the game and play again.
 
 Code Explanation
+
 HTML Structure
 The HTML structure includes elements for displaying the secret number, score, highscore, messages, input field, and buttons.
 
@@ -43,4 +46,11 @@ JavaScript Logic
   The game can be reset to play again.
 
 CSS Styling
+
 The CSS provides basic styling for the game elements, including colors, fonts, and layout.
+
+How to Run
+
+1. Save the HTML, CSS, and JavaScript code in the respective files (index.html, style.css, and script.js).
+2. Open the index.html file in your web browser.
+3. Start guessing the secret number and enjoy the game!
