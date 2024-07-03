@@ -49,7 +49,6 @@ document.querySelector(".guess").value = 23;
 console.log(document.querySelector(".guess").value);
 */
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
-document.querySelector(".Secret-number").textContent = secretNumber;
 
 let score = 25;
 document.querySelector(".score").textContent = score;
@@ -66,6 +65,11 @@ document.querySelector(".btn").addEventListener("click", function () {
     document.querySelector(".message").textContent = " ⛔ No number entered!";
   } else if (guess === secretNumber) {
     document.querySelector(".message").textContent = "😀 Correct!";
+    document.querySelector(".Secret-number").textContent = secretNumber;
+
+    document.querySelector("body").style.backgroundColor = "#60b347";
+
+    document.querySelector(".Secret-number").style.width = "30rem";
   } else if (guess > secretNumber) {
     document.querySelector(".message").textContent = "📈 Too high!";
     score--;
